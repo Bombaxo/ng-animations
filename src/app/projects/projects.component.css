@@ -5,10 +5,10 @@
 }
 
 .marked{
-    border: 2px solid rgb(79, 145, 231);
-    background-color: rgba(233, 233, 233, 0.781);
-    transition: all 0.2s ease-in-out 0.2s;
-    animation: marked 0.5s ease-out forwards;
+    /* border: 2px solid rgb(79, 145, 231);
+    background-color: rgba(233, 233, 233, 0.781); */
+    /* transition: all 0.2s ease-in-out 0.2s;
+    animation: marked 0.5s ease-out forwards; */
 }
 
 @keyframes marked {
