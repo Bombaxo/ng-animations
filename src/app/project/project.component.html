@@ -1,8 +1,7 @@
 <h3>
   {{ project.name }}
-  <!-- Show different usages of ngClass and ngStyle"-->
   <span
-    class="label"
+    class="label pull-right"
     [ngClass]="getPrjStatusClass()">{{ project.status }}</span>
 </h3>
 <hr>
@@ -12,5 +11,7 @@
   <option value="inactive" [selected]="project.status === 'inactive'">Inactive</option>
   <option value="critical" [selected]="project.status === 'critical'">Critical</option>
 </select>
-<button class="btn btn-primary" (click)="onUpdateStatus(prjStatus.value)">Update Status</button>
-<button class="btn btn-danger" (click)="onDelete()">Delete Project</button>
+<div class="pull-right">
+  <button class="btn btn-primary" (click)="onUpdateStatus(prjStatus.value)">Update Status</button>
+  <button class="btn btn-danger" (click)="onDelete()">Delete Project</button>
+</div>
