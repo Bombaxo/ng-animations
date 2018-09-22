@@ -6,4 +6,43 @@
 
 .marked{
     border: 2px solid rgb(79, 145, 231);
+    background-color: rgba(233, 233, 233, 0.781);
+    transition: all 0.2s ease-in-out 0.2s;
+    animation: marked 0.5s ease-out forwards;
+}
+
+@keyframes marked {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loading-bar{
+    width: 200px;
+    height: 20px;
+    margin: 150px auto;
+    border: 1px solid #CECECE;
+    box-sizing: content-box;
+}
+
+.loading-bar-element{
+    width: 0;
+    height: 20px;
+    background-color: deepskyblue;
+    animation: loading 2s ease-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
