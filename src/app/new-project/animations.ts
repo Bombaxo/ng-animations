@@ -1,4 +1,4 @@
-import { trigger, state, style, transition, animate, group, keyframes } from '@angular/animations';
+import { trigger, state, style, transition, animate, group } from '@angular/animations';
 
 export const buttonStateTrigger = trigger('buttonState', [
     state('valid', style({
