@@ -1,3 +1,6 @@
+:host {
+    display: block;
+}
 .form-group{
     padding: 10px 0;
 }
