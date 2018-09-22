@@ -47,7 +47,10 @@ export class ProjectsComponent implements OnInit {
   }
 
   onProjectCreated(project: Project) {
-    this.createNew = false;
+    /* this.createNew = false;
+    setTimeout(() => {
+      this.projects.unshift(project);
+    }, 300); */
     this.projects.unshift(project);
   }
 

@@ -35,10 +35,11 @@
   </div>
   <button
     type="submit"
+    [@buttonState]="f.valid ? 'valid' : 'invalid'"
     [disabled]="!f.valid"
     class="btn btn-success">Create Project</button>
   <button
     type="button"
     class="btn btn-danger"
-    (click)="onCancel()">Cancelddd</button>
+    (click)="onCancel()">Cancel</button>
 </form>
